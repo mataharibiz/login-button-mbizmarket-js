@@ -1,0 +1,56 @@
+{
+  "name": "preflight",
+  "version": "1.0.0",
+  "description": "Common TypeScript project scaffolding",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "global": "dist/index.global.js",
+  "types": "dist/types.d.ts",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "eslint src/**/*.ts --fix",
+    "build": "parcel build",
+    "dev": "parcel watch",
+    "start": "node dist/app.js",
+    "watch": "NODE_ENV=development nodemon -e ts --watch ./src --exec \"npm run dev\"",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShioriLabs/preflight.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShioriLabs/preflight/issues"
+  },
+  "homepage": "https://github.com/ShioriLabs/preflight#readme",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.10.0",
+    "@parcel/transformer-typescript-types": "^2.10.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.3",
+    "nodemon": "^2.0.7",
+    "parcel": "^2.10.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": "eslint"
+  },
+  "targets": {
+    "global": {
+      "outputFormat": "global",
+      "context": "browser"
+    }
+  }
+}

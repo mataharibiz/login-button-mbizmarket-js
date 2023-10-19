@@ -1,6 +1,10 @@
 name: 'PR code tests'
 on:
   pull_request:
+    paths:
+      - '**.ts'
+      - '**.scss'
+      - '**.json'
 
 jobs:
   install-dependencies:

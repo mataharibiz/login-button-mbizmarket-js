@@ -1,8 +1,10 @@
 
 import { login } from './modules/login'
+import { init } from './modules/init'
 
 const modules = {
-  login
+  login,
+  init
 }
 
 window.MBIZMARKET = modules

@@ -1,0 +1,46 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mb-login-button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.25s;
+  cursor: pointer;
+  background: #40c8f4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+
+  $root: &;
+
+  &:hover {
+    background: #00aeef;
+  }
+
+  &__spinner {
+    width: 10px;
+    height: 10px;
+    border: 2px solid transparent;
+    border-top-color: #a6a6a6;
+    border-radius: 10px;
+    display: none;
+  }
+
+  &.mb-connecting {
+    background: #e0e0e0;
+    color: #a6a6a6;
+    cursor: default;
+
+    #{$root}__spinner {
+      display: block;
+      animation: rotate 0.5s infinite;
+    }
+  }
+}

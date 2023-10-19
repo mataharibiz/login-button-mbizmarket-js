@@ -1,7 +1,7 @@
 {
-  "name": "preflight",
+  "name": "login-button-mbizmarket",
   "version": "1.0.0",
-  "description": "Common TypeScript project scaffolding",
+  "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -13,21 +13,22 @@
     "build": "parcel build",
     "dev": "parcel watch",
     "start": "node dist/app.js",
-    "watch": "NODE_ENV=development nodemon -e ts --watch ./src --exec \"npm run dev\"",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShioriLabs/preflight.git"
+    "url": "git+https://github.com/mataharibiz/login-button-mbizmarket-js.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ShioriLabs/preflight/issues"
+    "url": "https://github.com/mataharibiz/login-button-mbizmarket-js/issues"
   },
-  "homepage": "https://github.com/ShioriLabs/preflight#readme",
+  "homepage": "https://github.com/mataharibiz/login-button-mbizmarket-js#readme",
   "devDependencies": {
     "@parcel/packager-ts": "^2.10.0",
+    "@parcel/transformer-inline-string": "^2.10.0",
+    "@parcel/transformer-sass": "^2.10.0",
     "@parcel/transformer-typescript-types": "^2.10.0",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
@@ -39,7 +40,6 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
-    "nodemon": "^2.0.7",
     "parcel": "^2.10.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"

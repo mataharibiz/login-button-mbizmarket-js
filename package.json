@@ -1,7 +1,7 @@
 {
-  "name": "preflight",
+  "name": "login-button-mbizmarket",
   "version": "1.0.0",
-  "description": "Common TypeScript project scaffolding",
+  "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -18,16 +18,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShioriLabs/preflight.git"
+    "url": "git+https://github.com/mataharibiz/login-button-mbizmarket-js.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ShioriLabs/preflight/issues"
+    "url": "https://github.com/mataharibiz/login-button-mbizmarket-js/issues"
   },
-  "homepage": "https://github.com/ShioriLabs/preflight#readme",
+  "homepage": "https://github.com/mataharibiz/login-button-mbizmarket-js#readme",
   "devDependencies": {
     "@parcel/packager-ts": "^2.10.0",
+    "@parcel/transformer-inline-string": "^2.10.0",
+    "@parcel/transformer-sass": "^2.10.0",
     "@parcel/transformer-typescript-types": "^2.10.0",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",

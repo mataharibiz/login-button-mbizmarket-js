@@ -1,7 +1,7 @@
 {
-  "name": "login-button-mbizmarket",
+  "name": "@mbizmarket/login-button-mbizmarket",
   "version": "1.0.0",
-  "description": "",
+  "description": "Login With Mbizmarket Button",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/mataharibiz/login-button-mbizmarket-js.git"
   },
-  "author": "",
+  "author": "mbizmarket dev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mataharibiz/login-button-mbizmarket-js/issues"
@@ -52,5 +52,8 @@
       "outputFormat": "global",
       "context": "browser"
     }
-  }
+  },
+  "keywords": [
+    "mbizmarket"
+  ]
 }

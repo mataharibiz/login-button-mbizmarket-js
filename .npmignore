@@ -1,0 +1,8 @@
+.github/
+.husky/
+tsconfig.json
+.eslintignore
+.eslintrc
+.gitignore
+node_modules/
+src/

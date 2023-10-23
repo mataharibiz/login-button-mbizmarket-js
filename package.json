@@ -8,6 +8,7 @@
   "global": "dist/index.global.js",
   "types": "dist/types.d.ts",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "private": false,
   "scripts": {
     "test": "eslint src/**/*.ts --fix",
     "build": "parcel build",

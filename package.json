@@ -21,7 +21,7 @@
     "url": "git+https://github.com/mataharibiz/login-button-mbizmarket-js.git"
   },
   "author": "mbizmarket dev",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mataharibiz/login-button-mbizmarket-js/issues"
   },

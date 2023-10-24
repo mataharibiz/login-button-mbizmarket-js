@@ -40,7 +40,7 @@ use latest version
 ```html
 <script src="https://www.unpkg.com/@mbizmarket/login-button-mbizmarket/dist/index.global.js"></script>
 ```
-or using specific version: 
+or using specific version:
 
 ```html
 <script src="https://www.unpkg.com/@mbizmarket/login-button-mbizmarket@1.0.0/dist/index.global.js"></script>
@@ -61,7 +61,7 @@ After that, now the namespace `MBIZMARKET` is available globally and ready to us
 ## Usage
 
 To create the button, just create a `div` like this:
-make-sure redirectUrl and your domain url is same.iya
+(Please make sure that the redirectUrl and your domain url is same.)
 
 ```html
 <div
@@ -125,4 +125,3 @@ Currently, you can only customize the text of the login button by adding data at
 
 - `data-text-connect`: Change the text on default state (i.e. the initial state)
 - `data-text-connecting`: Change the text when clicked and loading
-

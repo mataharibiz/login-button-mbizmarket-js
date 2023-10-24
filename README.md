@@ -78,7 +78,9 @@ MBIZMARKET.init()
 
 And the button should show up with the default configuration.
 
-After button clicked and successfully redirect back to your redirectUrl, you will get string code in query string, and use the given code to save to your user session
+After button clicked and successfully redirect back to your redirectUrl, you will get string code in query string, and use the given code to save to your user session.
+
+Example in PHP:
 
 ```php
 // in your callback php-controller

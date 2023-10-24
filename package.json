@@ -1,6 +1,6 @@
 {
   "name": "@mbizmarket/login-button-mbizmarket",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3-alpha.1",
   "description": "Login With Mbizmarket Button",
   "source": "src/index.ts",
   "main": "dist/index.js",

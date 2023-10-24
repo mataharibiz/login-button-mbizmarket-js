@@ -1,6 +1,6 @@
 {
   "name": "@mbizmarket/login-button-mbizmarket",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Login With Mbizmarket Button",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -39,7 +39,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-standard": "^5.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "parcel": "^2.10.0",

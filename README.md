@@ -43,7 +43,7 @@ use latest version
 or using specific version:
 
 ```html
-<script src="https://www.unpkg.com/@mbizmarket/login-button-mbizmarket@1.0.0/dist/index.global.js"></script>
+<script src="https://www.unpkg.com/@mbizmarket/login-button-mbizmarket@1.0.2/dist/index.global.js"></script>
 ```
 
 #### with jsdelivr
@@ -53,7 +53,7 @@ or using specific version:
 or using specific version:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@mbizmarket/login-button-mbizmarket@1.0.0/dist/index.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mbizmarket/login-button-mbizmarket@1.0.2/dist/index.global.js"></script>
 ```
 
 After that, now the namespace `MBIZMARKET` is available globally and ready to use
@@ -96,7 +96,7 @@ if (!empty($code)) {
 
 ```php
 // in view
-<script src="https://cdn.jsdelivr.net/npm/@mbizmarket/login-button-mbizmarket@1.0.0/dist/index.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mbizmarket/login-button-mbizmarket@1.0.2/dist/index.global.js"></script>
 
 {% if ($session->get('codeMbizmarket')) %}
 

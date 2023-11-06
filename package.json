@@ -33,7 +33,7 @@
     "@parcel/transformer-typescript-types": "^2.10.0",
     "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
+    "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^7.17.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",

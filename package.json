@@ -1,13 +1,14 @@
 {
-  "name": "login-button-mbizmarket",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@mbizmarket/login-button-mbizmarket",
+  "version": "1.0.3",
+  "description": "Login With Mbizmarket Button",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "global": "dist/index.global.js",
   "types": "dist/types.d.ts",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "private": false,
   "scripts": {
     "test": "eslint src/**/*.ts --fix",
     "build": "parcel build",
@@ -19,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/mataharibiz/login-button-mbizmarket-js.git"
   },
-  "author": "",
+  "author": "mbizmarket dev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mataharibiz/login-button-mbizmarket-js/issues"
@@ -30,6 +31,7 @@
     "@parcel/transformer-inline-string": "^2.10.0",
     "@parcel/transformer-sass": "^2.10.0",
     "@parcel/transformer-typescript-types": "^2.10.0",
+    "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^7.32.0",
@@ -37,12 +39,12 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-standard": "^5.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.3",
     "parcel": "^2.10.0",
-    "ts-node": "^8.10.2",
-    "typescript": "^5.2.2"
+    "process": "^0.11.10",
+    "typescript": "^3.9.7"
   },
   "lint-staged": {
     "*.(ts|tsx)": "eslint"
@@ -52,5 +54,8 @@
       "outputFormat": "global",
       "context": "browser"
     }
-  }
+  },
+  "keywords": [
+    "mbizmarket"
+  ]
 }

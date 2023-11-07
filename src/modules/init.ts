@@ -1,17 +1,11 @@
-import { getConfigFromContainer } from '../utils/config'
+import { getConfigFromContainer, Config } from '../utils/config'
 import { login } from './login'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import styleSheet from 'bundle-text:../styles.scss'
 
-export function createLoginButton (container: HTMLElement): void {
-  const config = getConfigFromContainer(container)
-  if (!config) {
-    console.error(`[MBIZMARKET] Can't initialize button on element ${container}: Invalid Configuration`)
-    return
-  }
-
+export function createLoginButton (config: Config): HTMLButtonElement {
   const button = document.createElement('button') as HTMLButtonElement
   const spinner = document.createElement('div') as HTMLDivElement
   const text = document.createElement('span') as HTMLSpanElement
@@ -33,23 +27,32 @@ export function createLoginButton (container: HTMLElement): void {
     text.textContent = config.textConnecting ?? 'Menghubungkan...'
     login(config.clientId, config.redirectUrl)
   })
-  container.append(button)
+
+  return button
 }
 
-export function injectStyleSheet (): void {
-  const styleTag = document.createElement('style')
-  styleTag.innerText = styleSheet
-
-  document.querySelector('head')?.append(styleTag)
+export function createStyleSheet (): CSSStyleSheet {
+  const sheet = new CSSStyleSheet()
+  sheet.replaceSync(styleSheet)
+  return sheet
 }
 
 export function init (): void {
-  // Inject CSS for login button
-  injectStyleSheet()
+  // Create stylesheet instance
+  const sheet = createStyleSheet()
 
   // Create buttons
   const buttonContainers = document.querySelectorAll('[data-mbizmarket-login]')
   buttonContainers.forEach((container) => {
-    createLoginButton(container as HTMLElement)
+    const config = getConfigFromContainer(container as HTMLElement)
+    if (!config) {
+      console.error(`[MBIZMARKET] Can't initialize button on element ${container}: Invalid Configuration`)
+      return
+    }
+
+    const shadow = container.attachShadow({ mode: 'closed' })
+    const button = createLoginButton(config)
+    shadow.adoptedStyleSheets = [sheet]
+    shadow.appendChild(button)
   })
 }

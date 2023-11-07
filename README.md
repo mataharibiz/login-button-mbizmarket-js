@@ -101,7 +101,7 @@ if (!empty($code)) {
 {% if ($session->get('codeMbizmarket')) %}
 
   <p>Connected to Mbizmarket</p>
-  <a href="https://www.mbizmarket.co.id/sso/authenticate/{$session->get('codeMbizmarket')}?clientId=<YOUR-CLIENT-ID>" target="_blank">Go to Mbizmarket</a>
+  <a href="https://www.mbizmarket.co.id/sso/authenticate?authKey={$session->get('codeMbizmarket')}" target="_blank">Go to Mbizmarket</a>
 
 {% else %}
 
